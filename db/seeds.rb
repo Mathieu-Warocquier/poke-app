@@ -15,32 +15,22 @@ def poke_seed
   pokemons = RestClient.get("https://pokeapi.co/api/v2/pokemon?offset=0&limit=151")
   pokemons_array = JSON.parse(pokemons)["results"]
 
-
-  # puts pokemons_array
-
     pokemons_array.each do |p|
       pokemon = RestClient.get("#{p["url"]}")
 
-
       pokemon_name = JSON.parse(pokemon)["name"]
-
 
       pokemon_sprite = JSON.parse(pokemon)["sprites"]["other"]["official-artwork"]["front_default"]
 
-
       pokemon_weight = JSON.parse(pokemon)["weight"]
-
 
       pokemon_height = JSON.parse(pokemon)["height"]
 
-
       pokemon_type = JSON.parse(pokemon)["types"][0]["type"]["name"]
-      puts pokemon_type
 
       pokemon_order = JSON.parse(pokemon)["order"]
 
-
-      Pokemon.create(
+      Pokemon.create!(
         name: pokemon_name,
         weight: pokemon_weight,
         height: pokemon_height,
@@ -49,6 +39,7 @@ def poke_seed
         order: pokemon_order
       )
     end
+
 end
 
 poke_seed()

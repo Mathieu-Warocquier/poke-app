@@ -1,23 +1,18 @@
 <h1>Pokemons</h1>
 
-<%# <ul id="list" class="list"></ul> %>
-
 <div class="list">
-  <% @pokemons.each do |pokemon| %>
+
+
+
+
+
+  <% @pokemons.sort.each do |pokemon| %>
     <div class="list-item">
       <%= image_tag("#{pokemon.sprites}", height: 100, width: 150) %>
       <%= link_to pokemon_path(pokemon) do %><%= pokemon.name %>
       <% end %>
+      <p>No.<%=pokemon.order%></p>
 
     </div>
   <% end %>
 </div>
-
-
-<%# <%= link_to project_path(p) do %>
-
-
- <%# <%= pokemon.weight %>
-      <%# <%= pokemon.height %>
-      <%# <%= pokemon.types %>
-      <%# <%= pokemon.order %>
