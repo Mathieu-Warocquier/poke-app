@@ -8,7 +8,5 @@ html, body {
 body {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  background: rgb(55,54,36);
-background: radial-gradient(circle, rgba(55,54,36,1) 0%, rgba(148,148,112,1) 100%);
-
+  background: $fondbanner;
 }

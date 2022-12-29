@@ -1,15 +1,10 @@
 .navbar {
-  justify-content: space-between;
   background: transparent;
   padding: 0;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  flex-wrap: nowrap;
+  background: transparent;
+  position: fixed;
+  top: 0;
 
   .logo {
     border-radius: 50%;
