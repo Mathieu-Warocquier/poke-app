@@ -1,16 +1,15 @@
 
-
-
-
-<h1>Pokemons</h1>
+<%= render "shared/banner" %>
 
 <div class="list">
   <% @pokemons.sort.each do |pokemon| %>
     <div class="list-item">
       <%= image_tag("#{pokemon.sprites}", height: 100, width: 150) %>
-      <%= link_to pokemon_path(pokemon) do %><%= pokemon.name %>
-      <% end %>
-      <p>No.<%=pokemon.order%></p>
+      <div class="list-description">
+        <%= link_to pokemon_path(pokemon), class:"list-name" do %><%= pokemon.name %>
+        <% end %>
+        <p class="list-order">No.<%=pokemon.order%></p>
+      </div>
     </div>
   <% end %>
 </div>
