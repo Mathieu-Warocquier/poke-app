@@ -19,9 +19,23 @@ def poke_seed
     pokemons_array.each do |p|
       Pokemon.create(
         name: p["name"]
+        weight: p
+        height: p
+        sprites: p
+        types: p
+        order: p
       )
     end
 end
 
 poke_seed()
 puts "Seed ok"
+
+
+
+
+# weight"
+# "height"
+# "sprites"
+# "types"
+# "order"
