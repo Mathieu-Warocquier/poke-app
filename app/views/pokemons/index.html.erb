@@ -6,6 +6,7 @@
   <% @pokemons.each do |pokemon| %>
     <div class="list-item">
       <%= pokemon.name %>
+      <%= image_tag("#{pokemon.sprites}") %>
     </div>
   <% end %>
 </div>
