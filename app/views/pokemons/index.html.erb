@@ -1,3 +1,13 @@
 <h1>Pokemons</h1>
 
-<ul id="list" class="list"></ul>
+<%# <ul id="list" class="list"></ul> %>
+
+<div class="list">
+  <% @pokemons.each do |pokemon| %>
+    <div class="list-item">
+      <%= pokemon.name %>
+    </div>
+  <% end %>
+</div>
+
+<% console %>
