@@ -5,10 +5,19 @@
 <div class="list">
   <% @pokemons.each do |pokemon| %>
     <div class="list-item">
-      <%= pokemon.name %>
-      <%= image_tag("#{pokemon.sprites}") %>
+      <%= image_tag("#{pokemon.sprites}", height: 100, width: 150) %>
+      <%= link_to pokemon_path(pokemon) do %><%= pokemon.name %>
+      <% end %>
+
     </div>
   <% end %>
 </div>
 
-<% console %>
+
+<%# <%= link_to project_path(p) do %>
+
+
+ <%# <%= pokemon.weight %>
+      <%# <%= pokemon.height %>
+      <%# <%= pokemon.types %>
+      <%# <%= pokemon.order %>

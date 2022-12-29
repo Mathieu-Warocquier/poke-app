@@ -1,0 +1,13 @@
+<h1>la show</h1>
+
+
+
+      <%= image_tag("#{@pokemon.sprites}", height: 100, width: 150) %>
+      <%= @pokemon.name %>
+      <%= @pokemon.weight %>
+      <%= @pokemon.height %>
+      <%= @pokemon.types %>
+      <%= @pokemon.order %>
+
+
+<%= link_to pokemons_path do %>  <i class="fa-solid fa-star"></i>  <% end %>
