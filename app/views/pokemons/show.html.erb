@@ -1,13 +1,23 @@
-<h1>la show</h1>
+<div class="container">
 
 
+  <div class="description-show">
+  <%= link_to pokemons_path do %>  <i class="fa-solid fa-star"></i>  <% end %>
+    <div class="description_show-pokemon">
+      <p class="name"><%= @pokemon.name.upcase %></p>
+      <p class="d-description"> <strong>Weight:</strong>  <%= @pokemon.weight %></p>
+      <p class="d-description"><strong>Height:</strong>  <%= @pokemon.height %></p>
+      <p class="d-description"><strong>Order:</strong>  <%= @pokemon.order %></p>
+      <p class="d-description"><strong>Types:</strong> <%= @pokemon.types %></p>
+    </div>
 
-      <%= image_tag("#{@pokemon.sprites}", height: 100, width: 150) %>
-      <%= @pokemon.name %>
-      <%= @pokemon.weight %>
-      <%= @pokemon.height %>
-      <%= @pokemon.types %>
-      <%= @pokemon.order %>
+  </div>
 
-
-<%= link_to pokemons_path do %>  <i class="fa-solid fa-star"></i>  <% end %>
+  <div class="img-show">
+    <div class="container-img">
+      <div class="img-show-pokemon">
+        <%= image_tag("#{@pokemon.sprites}") %>
+      </div>
+    </div>
+  </div>
+</div>
