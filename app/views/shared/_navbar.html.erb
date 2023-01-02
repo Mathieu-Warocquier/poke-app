@@ -1,4 +1,4 @@
-<div class="navbar">
+<%# <div class="navbar">
   <div class="rectanglep">
     <div class="point-bleu">
     </div>
@@ -15,4 +15,12 @@
 
     <div class="partie-2"></div>
   </div>
+</div> %>
+
+<div class="navbar">
+  <%= link_to pokemons_path do%>
+    <div class="logo">
+      <%=image_tag("https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/1200px-Pok%C3%A9_Ball_icon.svg.png", height: 60, width: 60)%>
+    </div>
+   <% end %>
 </div>
