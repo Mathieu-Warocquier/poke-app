@@ -5,45 +5,58 @@
   align-items: center;
   justify-content: center;
   margin: 0px 50px;
-  background: rgb(55,54,36);
-  background: radial-gradient(circle, rgba(55,54,36,1) 0%, rgba(148,148,112,1) 100%);
+  // background: rgb(55,54,36);
+  // background: radial-gradient(circle, rgba(55,54,36,1) 0%, rgba(148,148,112,1) 100%);
+  background: #F1F1F1;
+  border-radius: 5px;
 
   .list-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 5px outset rgba(55,54,36,0.51);
-    border-radius: 30px 10px;
     padding: 5px 10px;
     margin: 10px 10px;
     font-family: $text;
     font-weight: bold;
     width: 20%;
     backdrop-filter: blur(5px);
+    border-bottom: 0px solid white;
+    border-right: 0px solid white;
+    border-top: 0px solid $red;
+    border-left: 0px solid $red;
+    border-radius: 50%;
+    transition: all 0.3s linear;
+    transition-delay: all 0.3s linear;
 
+    &:hover {
+      border-width: 5px;
+      transition-delay: 0s;
+   }
+
+
+   .list-description{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+
+     .list-name{
+       text-decoration: none;
+       color: $vert;
+       transition: all 300ms linear;
+       font-family: $text;
+       font-size: 20px;
+
+       &:hover{
+         color: #49493B;
+         font-size: 21px;
+       }
+     }
+
+     .list-order{
+       color: #49493B;
+       font-family: $text;
+     }
+   }
   }
 
-  .list-description{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .list-name{
-      text-decoration: none;
-      color: $vert;
-      transition: all 300ms linear;
-      font-family: $text;
-      font-size: 20px;
-
-      &:hover{
-        color: #49493B;
-        font-size: 21px;
-      }
-    }
-
-    .list-order{
-      color: #49493B;
-      font-family: $text;
-    }
-  }
 }
