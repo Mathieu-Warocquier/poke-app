@@ -9,11 +9,23 @@
     background: $bleu;
     color: $jaune;
     font-family: $titre;
+    font-weight: bold;
     transition: opacity 300ms linear;
+    margin-top: 5px;
 
     &:hover {
       opacity: 0.7;
     }
+  }
+
+  .form-control:focus {
+    color: $bleu;
+    background-color: $blanc;
+    border-color: $jaune;
+    font-family: $text;
+    outline: 0;
+    box-shadow: 0px 0px 0px 3px #000000;
+    box-shadow: 0 0 0 1px #ffe01968;
   }
 
 }
