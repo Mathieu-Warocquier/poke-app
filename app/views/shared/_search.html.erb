@@ -1,14 +1,7 @@
-<div data-controller="refresh-list">
-  <%= form_with url: pokemons_path, method: :get, html: { class: 'mb-5', data: { refresh_list_target: 'form' } } do |f| %>
-    <%= f.text_field :query,
-                     class: "form-control",
-                     placeholder: 'Type a movie title',
-                     value: params[:query],
-                     data: {
-                      refresh_list_target: 'searchInput',
-                      action: "keyup->refresh-list#update"
-                    } %>
-  <% end %>
-  <div data-refresh-list-target="list">
-  </div>
-</div>
+<%= form_with url: pokemons_path, method: :get, class: "d-flex searchbar" do %>
+<%= text_field_tag :query,
+    params[:query],
+    class: "form-control",
+    placeholder: "Find a pokemon" %>
+<%= submit_tag "Search", class: "btn btn-search" %>
+<% end %>

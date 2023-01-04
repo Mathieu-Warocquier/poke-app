@@ -11,19 +11,19 @@
   left: 0;
   width: 100%;
 
-  .logo {
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    width: 50px;
-  }
+  // .logo {
+  //   border-radius: 50%;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   height: 100%;
+
+  // }
 
   .titre{
     font-family: $titre_1;
-    font-size: 45px;
-    color: $bleu;
-    text-shadow: 2px 2px 0px #F1F1F1, 5px 4px 0px $jaune;
+    font-size: 30px;
+    color: $jaune;
+    text-shadow: 2px 2px 0px $bleu, 5px 4px 0px $blanc;
   }
 }

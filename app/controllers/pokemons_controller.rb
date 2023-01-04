@@ -1,16 +1,11 @@
 class PokemonsController < ApplicationController
   def index
-    @pokemons = Pokemon.all
-
-
-    # if params[:query].present?
-    #   @pokemons = @pokemons.where('title ILIKE ?', "%#{params[:query]}%")
-    # end
-
-    # respond_to do |format|
-    #   format.html # Follow regular flow of Rails
-    #   format.text { render partial: 'list.html', locals: { pokemons: @pokemons } }
-    # end
+    # @pokemons = Pokemon.all
+    if params[:query].present?
+      @pokemons = Pokemon.where('name ILIKE ?', "%#{params[:query]}%")
+        else
+      @pokemons = Pokemon.all
+    end
   end
 
   def show
