@@ -34,6 +34,7 @@
     transition: all 0.3s linear;
     transition-delay: all 0.3s linear;
 
+
     &:hover {
       border-bottom: 5px solid white;
       border-right: 5px solid white;
@@ -41,9 +42,11 @@
       border-left: 5px solid $red;
       transition-delay: 0s;
       background: rgb(213, 213, 213);
+
+
    }
 
-
+   img { height: 150px; width: auto; }
 
    .list-description{
      display: flex;

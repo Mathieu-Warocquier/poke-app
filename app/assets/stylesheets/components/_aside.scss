@@ -1,9 +1,9 @@
 .aside {
-  min-width: 20%;
   position: sticky;
-  z-index: 1;
   top: 80px;
+  z-index: 1;
   height: 100%;
+  min-width: 20%;
   background: $fondaside;
 
   p {
