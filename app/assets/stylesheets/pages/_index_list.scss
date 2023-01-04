@@ -1,14 +1,20 @@
+.list-aside {
+  display: flex;
+  // flex-direction: row;
+}
+
+
 .list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin: 0px 50px;
   // background: rgb(55,54,36);
   // background: radial-gradient(circle, rgba(55,54,36,1) 0%, rgba(148,148,112,1) 100%);
   background: #F1F1F1;
-  border-radius: 5px;
+  min-width: 80%;
+
 
   .list-item {
     display: flex;
@@ -46,7 +52,7 @@
 
      .list-name{
        text-decoration: none;
-       color: $vert;
+       color: $font;
        transition: all 300ms linear;
        font-family: $text;
        font-size: 20px;

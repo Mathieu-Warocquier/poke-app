@@ -1,17 +1,29 @@
 .navbar {
-  background: transparent;
-  padding: 0;
+  display: flex;
   justify-content: space-between;
-  background: transparent;
-  // position: fixed;
-  // top: 0;
+  align-items: center;
+  background: $font;
+  padding: 5px 20px;
+  position: fixed;
+  z-index: 2;
+  height: 75px;
+  top: 0;
+  left: 0;
+  width: 100%;
 
   .logo {
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 75;
-    width: 75;
+    height: 50px;
+    width: 50px;
+  }
+
+  .titre{
+    font-family: $titre_1;
+    font-size: 45px;
+    color: $bleu;
+    text-shadow: 2px 2px 0px #F1F1F1, 5px 4px 0px $jaune;
   }
 }
