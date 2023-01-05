@@ -7,6 +7,52 @@ html, body {
 
 body {
   // display: grid;
-  // // grid-template-rows: auto 1fr auto;
+  // grid-template-rows: auto 1fr auto;
   background: $fondaside;
+}
+
+.container-home {
+  background: $blanc;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  max-height: 100vh;
+  width: 100%;
+
+  // grid-row-start, grid-column-start, grid-row-end, suivies par grid-column-end.
+
+
+  .home-text {
+    grid-area: 2 / 1 / 5 / 4;
+    // background: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 25px;
+
+    h1 {
+      font-family: $titre_1;
+      color: $bleu;
+      font-size: 200px;
+      font-weight: bold;
+      text-shadow: 1px 1px 3px $jaune;
+    }
+
+    p {
+      font-family: $titre;
+      color: $bleu;
+      opacity: 0.9;
+      font-size: 25px;
+      font-weight: bold;
+      text-shadow: 1px 1px 3px $jaune;
+    }
+  }
+
+  .home-img {
+    grid-area: 1 / 4 / 6 / 6;
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
 }

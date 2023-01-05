@@ -1,22 +1,24 @@
-<div class="container">
 
+<div class="poke-show">
+<%= link_to pokemons_path do %><i class="fa-solid fa-arrow-left fa-return"> Return pokedex</i><% end%>
 
-  <div class="description-show">
-  <%= link_to pokemons_path do %>  <i class="fa-solid fa-star"></i>  <% end %>
-    <div class="description_show-pokemon">
-      <p class="name"><%= @pokemon.name.upcase %></p>
-      <p class="d-description"> <strong>Weight:</strong>  <%= @pokemon.weight %></p>
-      <p class="d-description"><strong>Height:</strong>  <%= @pokemon.height %></p>
-      <p class="d-description"><strong>Order:</strong>  <%= @pokemon.order %></p>
-      <p class="d-description"><strong>Types:</strong> <%= @pokemon.types %></p>
+  <div class="desc-img">
+    <div class="description-show">
+      <div class="description_show-pokemon">
+        <p class="name"><%= @pokemon.name.upcase %></p>
+        <p class="d-description"> <strong>Weight:</strong>  <%= @pokemon.weight %></p>
+        <p class="d-description"><strong>Height:</strong>  <%= @pokemon.height %></p>
+        <p class="d-description"><strong>Order:</strong>  <%= @pokemon.order %></p>
+        <p class="d-description"><strong>Types:</strong> <%= @pokemon.types %></p>
+      </div>
+
     </div>
 
-  </div>
-
-  <div class="img-show">
-    <div class="container-img">
-      <div class="img-show-pokemon">
-        <%= image_tag("#{@pokemon.sprites}") %>
+    <div class="img-show">
+      <div id="card" class="container-img">
+        <div class="img-show-pokemon">
+          <%= image_tag("#{@pokemon.sprites}") %>
+        </div>
       </div>
     </div>
   </div>

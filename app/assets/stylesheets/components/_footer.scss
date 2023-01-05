@@ -6,6 +6,9 @@
   height: 40px;
   padding: 0px 50px;
   color: $jaune;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
 }
 .footer-links {
   display: flex;
@@ -21,6 +24,7 @@
 .footer-links a:hover {
   opacity: 1;
 }
-.footer .fa-heart {
-  color: #D23333;
+
+.footer-copyright {
+  opacity: 0.8;
 }

@@ -1,15 +1,27 @@
-.container {
+.poke-show {
+
+  position: fixed;
+  top: 80px;
+  height: 85%;
+  width: 100%;
+}
+
+
+.desc-img{
   display: flex;
   flex-direction: row;
-
+  height: 100%;
+  width: 100%;
 }
+
 
 .description-show{
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 50%;
   justify-content: center;
   align-items: center;
+  color: $bleu;
 }
 
 .description_show-pokemon {
@@ -18,7 +30,7 @@
   padding-left: 50px;
 
   .name{
-    font-size: 90px;
+    font-size: 75px;
     font-weight: bold;
     font-family: $titre;
   }
@@ -29,6 +41,7 @@
 
     strong {
       font-size: 30px;
+      opacity: 0.8;
     }
   }
 
@@ -64,3 +77,17 @@
     height: auto;
   }
 }
+
+  .fa-return{
+    color: $bleu;
+    font-size: 15px;
+    position: fixed;
+    top: 90px;
+    left: 10px;
+    transition: all 300ms linear;
+
+    &:hover {
+      opacity: 0.7;
+      font-size: 18px;
+    }
+  }
