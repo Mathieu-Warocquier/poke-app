@@ -36,6 +36,19 @@ body {
       font-size: 200px;
       font-weight: bold;
       text-shadow: 1px 1px 3px $jaune;
+      z-index: 1;
+
+
+      &:before {
+        border-top: 40px solid;
+        border-image: linear-gradient(#8ce7ff, #ffef0a) 108;
+        content:"";
+        margin: 0 auto;
+        position: absolute;
+        top: 50%; left: 0; right: 0; bottom: 0;
+        width: 25%;
+        z-index: -1;
+    }
     }
 
     p {
@@ -45,6 +58,16 @@ body {
       font-size: 25px;
       font-weight: bold;
       text-shadow: 1px 1px 3px $jaune;
+      width: 36ch;
+      animation: typing 2s steps(22);
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+
+  @keyframes typing {
+    from {
+      width: 0
     }
   }
 
@@ -55,4 +78,19 @@ body {
       width: auto;
     }
   }
+
+
+  .btn-home {
+
+      border-radius: 10px;
+      background: $jaune;
+      padding: 10px 30px;
+      align-self: flex-start;
+      text-decoration: none;
+      font-weight: bold;
+      font-family: $text;
+      color: $bleu;
+
+  }
+
 }
