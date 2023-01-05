@@ -14,7 +14,26 @@
 
     </div>
 
+
+  <% if @pokemon.types == "grass" %>
+    <div id="card" class="container-img vert">
+  <% elsif @pokemon.types == "fire" %>
+    <div id="card" class="container-img rouge">
+  <% elsif @pokemon.types == "water" %>
+    <div id="card" class="container-img bleu">
+  <% elsif @pokemon.types == "bug" %>
+  <div id="card" class="container-img insecte">
+  <% elsif @pokemon.types == "normal" %>
+  <div id="card" class="container-img normal">
+  <% elsif @pokemon.types == "poison" %>
+  <div id="card" class="container-img poison">
+  <% elsif @pokemon.types == "electric" %>
+  <div id="card" class="container-img electric">
+  <% elsif @pokemon.types == "ground" %>
+  <div id="card" class="container-img ground">
+  <% else %>
       <div id="card" class="container-img">
+  <% end %>
         <div class="img-show-pokemon">
           <%= image_tag("#{@pokemon.sprites}") %>
         </div>
