@@ -13,6 +13,7 @@
   grid-template-rows: 20% 20% 20% 20% 20%;
   height: 100%;
   width: 100%;
+  background: $blanc;
 }
 
 
@@ -74,12 +75,11 @@
   justify-content: center;
   align-items: center;
   background: rgb(241,241,241);
-  background: linear-gradient(320deg, rgba(241,241,241,1) 50%, rgba(255,96,96,1) 70%);
-  border-radius: 15px;
+  background: linear-gradient(320deg, rgba(241,241,241,1) 0%, rgba(255,96,96,1) 70%);
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-area: 2 / 7 / 5 / 9;
+  grid-area: 1 / 7 / 6 / 9;
 }
 
 .img-show-pokemon {
