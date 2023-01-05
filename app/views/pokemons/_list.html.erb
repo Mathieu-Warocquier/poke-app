@@ -1,16 +1,14 @@
- <div data-refresh-list-target="list" class="list" >
-    <% @pokemons.sort.each do |pokemon| %>
+
+ <div data-refresh-list-target="list" class="list-d" >
+    <% @pokemons.each do |pokemon| %>
       <div class="list-item">
-    <%= link_to pokemon_path(pokemon), class:"list-name" do %>
-        <%= image_tag("#{pokemon.sprites}") %>
-        <div class="list-description">
-
-            <%# <%= pokemon.name, class:"list-name" %>
-
-          <p class="list-name"><%=pokemon.name%></p>
-          <p class="list-order">No.<%=pokemon.order%></p>
-        </div>
+        <%= link_to pokemon_path(pokemon), class:"list-name" do %>
+          <%= image_tag("#{pokemon.sprites}") %>
+          <div class="list-description">
+            <p class="list-name"><%=pokemon.name%></p>
+            <p class="list-order">No.<%=pokemon.order%></p>
+          </div>
+        <% end %>
       </div>
-      <% end %>
     <% end %>
   </div>
