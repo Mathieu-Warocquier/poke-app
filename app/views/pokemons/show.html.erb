@@ -22,15 +22,23 @@
   <% elsif @pokemon.types == "water" %>
     <div id="card" class="container-img bleu">
   <% elsif @pokemon.types == "bug" %>
-  <div id="card" class="container-img insecte">
+    <div id="card" class="container-img insecte">
   <% elsif @pokemon.types == "normal" %>
-  <div id="card" class="container-img normal">
+    <div id="card" class="container-img normal">
   <% elsif @pokemon.types == "poison" %>
-  <div id="card" class="container-img poison">
+    <div id="card" class="container-img poison">
   <% elsif @pokemon.types == "electric" %>
-  <div id="card" class="container-img electric">
+    <div id="card" class="container-img electric">
   <% elsif @pokemon.types == "ground" %>
-  <div id="card" class="container-img ground">
+    <div id="card" class="container-img ground">
+  <% elsif @pokemon.types == "fairy" %>
+    <div id="card" class="container-img fée">
+  <% elsif @pokemon.types == "fighting" %>
+    <div id="card" class="container-img combat">
+  <% elsif @pokemon.types == "psychic" %>
+    <div id="card" class="container-img psy">
+  <% elsif @pokemon.types == "ghost" %>
+    <div id="card" class="container-img spectre">
   <% else %>
       <div id="card" class="container-img">
   <% end %>

@@ -122,6 +122,27 @@
   background: linear-gradient(320deg, rgba(241,241,241,1) 0%, $ground 70%);
 }
 
+.fée {
+  background: rgb(241,241,241);
+  background: linear-gradient(320deg, rgba(241,241,241,1) 0%, $fée 70%);
+}
+
+.combat {
+  background: rgb(241,241,241);
+  background: linear-gradient(320deg, rgba(241,241,241,1) 0%, $combat 70%);
+}
+
+.psy {
+  background: rgb(241,241,241);
+  background: linear-gradient(320deg, rgba(241,241,241,1) 0%, $psy 70%);
+}
+
+.spectre {
+  background: rgb(241,241,241);
+  background: linear-gradient(320deg, rgba(241,241,241,1) 0%, $spectre 70%);
+}
+
+
 .img-show-pokemon {
   img{
     width: 90%;
