@@ -43,10 +43,16 @@
       transition-delay: 0s;
       background: rgb(213, 213, 213);
 
-
+      .list-name {
+          color: #49493B;
+          font-size: 23px;
+        }
+      }
    }
 
    img { height: 150px; width: auto; }
+
+   a { text-decoration: none; }
 
    .list-description{
      display: flex;
@@ -59,19 +65,12 @@
        transition: all 300ms linear;
        font-family: $text;
        font-size: 20px;
-
-       &:hover{
-         color: #49493B;
-         font-size: 21px;
-       }
      }
 
      .list-order{
        color: #49493B;
        font-family: $text;
-
+       font-size: 15px;
      }
    }
   }
-
-}

@@ -7,16 +7,6 @@
     <%= render "shared/aside" %>
   </div>
 
-  <div class="list">
-    <% @pokemons.sort.each do |pokemon| %>
-      <div class="list-item">
-        <%= image_tag("#{pokemon.sprites}") %>
-        <div class="list-description">
-          <%= link_to pokemon_path(pokemon), class:"list-name" do %><%= pokemon.name %>
-          <% end %>
-          <p class="list-order">No.<%=pokemon.order%></p>
-        </div>
-      </div>
-    <% end %>
-  </div>
+  <%= render "pokemons/list" %>
+
 </div>

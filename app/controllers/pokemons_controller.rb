@@ -6,6 +6,11 @@ class PokemonsController < ApplicationController
         else
       @pokemons = Pokemon.all
     end
+
+    respond_to do |format|
+      format.html # Follow regular flow of Rails
+      format.text { render partial: 'list.html', locals: { pokemons: @pokemons } }
+    end
   end
 
   def show
