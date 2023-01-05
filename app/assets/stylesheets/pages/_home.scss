@@ -40,15 +40,26 @@ body {
 
 
       &:before {
-        border-top: 40px solid;
-        border-image: linear-gradient(#8ce7ff, #ffef0a) 108;
-        content:"";
-        margin: 0 auto;
+        border-top: 90px solid;
+        border-image: linear-gradient(rgba(255,203,3,1), rgba(255,150,1,1)) 108;
+        content: "";
+        height: 2px;
+        /* margin: 0 auto; */
         position: absolute;
-        top: 50%; left: 0; right: 0; bottom: 0;
-        width: 25%;
+        top: 40%;
+        left: 41px;
+        right: 0;
+        bottom: 0;
+        width: 50%;
         z-index: -1;
+        animation: barre 2s linear;
     }
+    }
+
+    @keyframes barre {
+      from {
+        width: 0
+      }
     }
 
     p {
@@ -83,13 +94,20 @@ body {
   .btn-home {
 
       border-radius: 10px;
-      background: $jaune;
+      background: rgba(255,203,3,1);
       padding: 10px 30px;
       align-self: flex-start;
       text-decoration: none;
       font-weight: bold;
       font-family: $text;
       color: $bleu;
+      transition: all 300ms linear;
+      font-size: 20px;
+
+      &:hover {
+        background: rgba(255, 149, 1, 0.846);
+        font-size: 21px;
+      }
 
   }
 
