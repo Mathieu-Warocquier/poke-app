@@ -2,7 +2,7 @@ const cards = document.querySelectorAll("#card")
 const THRESHOLD = 20;
 
 
-cards.forEach((card) => {
+// cards.forEach((card) => {
 
   const handleHover = (e) => {
     const { clientX, clientY, currentTarget } = e;
@@ -27,4 +27,4 @@ cards.forEach((card) => {
   card.addEventListener("mouseleave", resetStyles);
 
 
-});
+// });
