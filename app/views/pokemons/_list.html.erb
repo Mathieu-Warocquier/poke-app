@@ -1,6 +1,6 @@
 
  <div data-refresh-list-target="list" class="list-d" >
-    <% @pokemons.each do |pokemon| %>
+    <% pokemons.each do |pokemon| %>
       <div class="list-item">
         <%= link_to pokemon_path(pokemon), class:"list-name" do %>
           <%= image_tag("#{pokemon.sprites}") %>
