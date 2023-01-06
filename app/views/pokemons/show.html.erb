@@ -3,16 +3,50 @@
 <%= link_to pokemons_path do %><i class="fa-solid fa-arrow-left fa-return"> Return pokedex</i><% end%>
 
   <div class="desc-img">
-    <div class="description-show">
-        <p class="name"><%= @pokemon.name.upcase %></p>
-      <div class="description_show-pokemon">
-        <p class="d-description"> <strong>Weight:</strong> <br> <%= @pokemon.weight %> g</p>
-        <p class="d-description"><strong>Height:</strong> <br> <%= @pokemon.height %> m</p>
-        <p class="d-description"><strong>Order:</strong> <br> <%= @pokemon.order %></p>
-        <p class="d-description"><strong>Types:</strong> <br> <%= @pokemon.types %></p>
-      </div>
+    <p class="name"><%= @pokemon.name.upcase %></p>
 
-    </div>
+  <div class="d-description-weight">
+    <p><strong>Weight:</strong><br><%= @pokemon.weight %> g</p>
+  </div>
+  <div class="d-description-height">
+    <p><strong>Height:</strong> <br> <%= @pokemon.height %> m</p>
+  </div>
+  <div class="d-description-order">
+    <p><strong>Order:</strong> <br> <%= @pokemon.order %></p>
+  </div>
+  <div class="d-description-types">
+    <p><strong>Types:</strong> <br> <%= @pokemon.types %></p>
+  </div>
+
+  <% if @pokemon.types == "grass" %>
+    <div class="barre vert"></div>
+  <% elsif @pokemon.types == "fire" %>
+    <div class="barre rouge"></div>
+  <% elsif @pokemon.types == "water" %>
+    <div class="barre bleu"></div>
+  <% elsif @pokemon.types == "bug" %>
+    <div class="barre insecte"></div>
+  <% elsif @pokemon.types == "normal" %>
+    <div class="barre normal"></div>
+  <% elsif @pokemon.types == "poison" %>
+    <div class="barre poison"></div>
+  <% elsif @pokemon.types == "electric" %>
+    <div class="barre electric"></div>
+  <% elsif @pokemon.types == "ground" %>
+    <div class="barre ground"></div>
+  <% elsif @pokemon.types == "fairy" %>
+    <div class="barre fée"></div>
+  <% elsif @pokemon.types == "fighting" %>
+    <div class="barre combat"></div>
+  <% elsif @pokemon.types == "psychic" %>
+    <div class="barre psy"></div>
+  <% elsif @pokemon.types == "ghost" %>
+    <div class="barre spectre"></div>
+  <% elsif @pokemon.types == "ice" %>
+    <div class="barre ice"></div>
+  <% else %>
+      <div class="barre">
+  <% end %>
 
 
   <% if @pokemon.types == "grass" %>
@@ -39,6 +73,8 @@
     <div id="card" class="container-img psy">
   <% elsif @pokemon.types == "ghost" %>
     <div id="card" class="container-img spectre">
+  <% elsif @pokemon.types == "ice" %>
+    <div id="card" class="container-img ice">
   <% else %>
       <div id="card" class="container-img">
   <% end %>

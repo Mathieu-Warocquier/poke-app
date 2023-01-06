@@ -9,63 +9,143 @@
 
 .desc-img{
   display: grid;
-  grid-template-columns: 10% 10% 10% 10% 10% 5% 20% 20% 5%;
+  grid-template-columns: 10% 20% 20% 5% 20% 20% 5%;
   grid-template-rows: 20% 20% 20% 20% 20%;
   height: 100%;
   width: 100%;
   background: $blanc;
-}
-
-
-.description-show{
-  grid-area: 2 / 2 / 5 / 6;
-  width: 100%;
-  color: $bleu;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 
   .name{
     font-size: 75px;
     font-weight: bold;
     font-family: $titre;
+    grid-area: 1 / 1 / 2 / 6;
+    color: $bleu;
+    padding: 15px 15px;
+    z-index: 1;
   }
-
 }
 
-.description_show-pokemon {
-  width: 100%;
-  height: 100%;
-  background: $blanc;
-  border-radius: 15px;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
-  justify-items: stretch;
-
-
-  .d-description{
-    font-family: $text;
-    font-size: 25px;
-    align-self: center;
-    text-align: center;
-
-    strong {
-      font-size: 30px;
-      opacity: 0.8;
-    }
-  }
-
+.barre {
+  background: rgb(241,241,241);
+  background: linear-gradient(320deg, rgba(241,241,241,1) 0%, $normal 70%);
+  grid-area: 1 / 1 / 6 / 2;
+  z-index: 0;
 }
 
-// .img-show {
-//   height: 100%;
+
+// .description-show{
+//   grid-area: 2 / 2 / 5 / 6;
 //   width: 100%;
+//   color: $bleu;
 //   display: flex;
-//   justify-content: center;
-//   align-items: center;
+//   flex-direction: column;
+//   justify-content: space-between;
 
 // }
+
+// .description_show-pokemon {
+//   width: 100%;
+//   height: 100%;
+//   background: $blanc;
+//   border-radius: 15px;
+//   display: grid;
+//   grid-template-columns: 50% 50%;
+//   grid-template-rows: 50% 50%;
+//   justify-items: stretch;
+
+
+//   .d-description{
+//     font-family: $text;
+//     font-size: 25px;
+//     align-self: center;
+//     text-align: center;
+
+//     strong {
+//       font-size: 30px;
+//       opacity: 0.8;
+//     }
+//   }
+
+// }
+.d-description-weight {
+  grid-area: 2 / 2 / 4 / 2;
+  background: rgb(241,241,241);
+  background: linear-gradient(320deg, rgba(241,241,241,1) 0%, $normal 70%);
+  border-radius: 50%;
+  margin: 10px 10px;
+  position: relative;
+
+  p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 35px;
+    color: $bleu;
+  }
+}
+
+.d-description-height {
+  grid-area: 2 / 3 / 4 / 4;
+  background: rgb(241,241,241);
+  background: linear-gradient(320deg, rgba(241,241,241,1) 0%, $normal 70%);
+  border-radius: 50%;
+  margin: 10px 10px;
+  position: relative;
+
+  p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 35px;
+    color: $bleu;
+  }
+}
+
+
+.d-description-order {
+  grid-area: 4 / 2 / 6 / 2;
+  background: rgb(241,241,241);
+  background: linear-gradient(320deg, rgba(241,241,241,1) 0%, $normal 70%);
+  border-radius: 50%;
+  margin: 10px 10px;
+  position: relative;
+
+  p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 35px;
+    color: $bleu;
+  }
+}
+
+.d-description-types {
+  grid-area: 4 / 3 / 6 / 3;
+  background: rgb(241,241,241);
+  background: linear-gradient(320deg, rgba(241,241,241,1) 0%, $normal 70%);
+  border-radius: 50%;
+  margin: 10px 10px;
+  position: relative;
+
+  p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 35px;
+    color: $bleu;
+  }
+}
+
+
 
 
 .container-img {
@@ -79,7 +159,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-area: 1 / 7 / 6 / 9;
+  grid-area: 1 / 5 / 6 / 7;
 }
 
 .vert {
@@ -142,6 +222,11 @@
   background: linear-gradient(320deg, rgba(241,241,241,1) 0%, $spectre 70%);
 }
 
+.ice {
+  background: rgb(241,241,241);
+  background: linear-gradient(320deg, rgba(241,241,241,1) 0%, $ice 70%);
+}
+
 
 .img-show-pokemon {
   img{
@@ -157,6 +242,7 @@
     top: 90px;
     left: 10px;
     transition: all 300ms linear;
+    z-index: 2;
 
     &:hover {
       opacity: 0.7;
