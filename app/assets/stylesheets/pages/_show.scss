@@ -183,9 +183,14 @@
   width: 100%;
   margin-bottom: 25px;
 
+  .couleur {
+    img {
+      opacity: 0.4;
+    }
+  }
+
   .d-description {
     width: 20%;
-    // background: rgb(214, 116, 116);
     height: 400px;
     display: flex;
     flex-direction: column;
