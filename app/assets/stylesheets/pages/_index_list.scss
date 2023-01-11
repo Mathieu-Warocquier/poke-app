@@ -4,32 +4,6 @@
 
 // }
 
-.titre-filter {
-  text-align: center;
-  font-family: $titre;
-  color: $bleu;
-  margin-top: 10px;
-}
-.filtre {
-  height: 80px;
-  width: 100%;
-  background: #F1F1F1;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 40px;
-
-
-  img {
-    height: 35px;
-    width: auto;
-
-    &:hover {
-      height: 40px;
-    }
-  }
-}
-
 
 .list-d {
   display: flex;

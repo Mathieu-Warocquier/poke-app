@@ -1,0 +1,38 @@
+.ticker-title {
+  width: 230%;
+  padding-bottom: 5px;
+  color: $bleu;
+  margin-top: 10px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.ticker-title > * {
+  display: inline-block;
+  margin-right: 50px;
+  animation: title 6s infinite linear;
+}
+
+@keyframes title {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(-233px);}
+}
+
+.filtre {
+  height: 80px;
+  width: 100%;
+  background: #F1F1F1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 40px;
+
+  img {
+    height: 35px;
+    width: auto;
+
+    &:hover {
+      height: 40px;
+    }
+  }
+}
