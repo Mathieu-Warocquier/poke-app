@@ -19,9 +19,14 @@
   align-items: center;
   margin-bottom: 40px;
 
+
   img {
     height: 35px;
     width: auto;
+
+    &:hover {
+      height: 40px;
+    }
   }
 }
 
