@@ -1,7 +1,15 @@
-.list-aside {
-  display: flex;
-  // flex-direction: row;
+// .list-aside {
+//   display: flex;
+//   // flex-direction: row;
 
+// }
+
+.filtre {
+  height: 200px;
+  background: $blanc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -47,7 +55,6 @@
 
       .list-name {
           color: #49493B;
-          font-size: 23px;
         }
       }
    }
