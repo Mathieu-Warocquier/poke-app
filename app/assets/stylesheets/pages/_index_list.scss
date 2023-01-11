@@ -4,12 +4,25 @@
 
 // }
 
+.titre-filter {
+  text-align: center;
+  font-family: $titre;
+  color: $bleu;
+  margin-top: 10px;
+}
 .filtre {
-  height: 200px;
-  background: $blanc;
+  height: 80px;
+  width: 100%;
+  background: #F1F1F1;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  margin-bottom: 40px;
+
+  img {
+    height: 35px;
+    width: auto;
+  }
 }
 
 
