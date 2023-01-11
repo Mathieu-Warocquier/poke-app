@@ -1,21 +1,26 @@
-.list-aside {
-  display: flex;
-  // flex-direction: row;
+// .list-aside {
+//   display: flex;
+//   // flex-direction: row;
 
+// }
+
+.filtre {
+  height: 200px;
+  background: $blanc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
 .list-d {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
-  // background: rgb(55,54,36);
-  // background: radial-gradient(circle, rgba(55,54,36,1) 0%, rgba(148,148,112,1) 100%);
   background: #F1F1F1;
-  min-width: 80%;
-  padding: 3% 0;
+  width: 80%;
+  max-width: 1300px;
+  margin: 70px auto 0;
 
 
   .list-item {
@@ -26,13 +31,15 @@
     margin: 10px 10px;
     font-family: $text;
     font-weight: bold;
-    width: 20%;
+    width: 250px;
+    height: auto;
+    flex-shrink: 0;
     backdrop-filter: blur(5px);
     border-bottom: 5px solid rgba(255, 255, 255, 0);
     border-right: 5px solid rgba(255, 255, 255, 0);
     border-top: 5px solid rgba(255, 255, 255, 0);
     border-left: 5px solid rgba(255, 255, 255, 0);
-    border-radius: 50%;
+    border-radius: 20%;
     transition: all 0.3s linear;
     transition-delay: all 0.3s linear;
 
@@ -47,12 +54,11 @@
 
       .list-name {
           color: #49493B;
-          font-size: 23px;
         }
       }
    }
 
-   img { height: 150px; width: auto; }
+   img { width: 100%; height: auto;  }
 
    a { text-decoration: none; }
 

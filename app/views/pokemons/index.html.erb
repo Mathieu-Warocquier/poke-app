@@ -1,10 +1,6 @@
-
-<%= render "shared/banner" %>
-
-<div data-controller="refresh-list" class="list-aside">
-  <div class="aside">
-    <%= render "shared/aside" %>
-  </div>
-
-  <%= render "pokemons/list", pokemons: @pokemons %>
+<div class="index">
+  <%= render 'shared/banner' %>
+  <div class="filtre"> ici le filtre</div>
+  <%= render 'pokemons/search' %>
+  <%= render 'pokemons/list' %>
 </div>
