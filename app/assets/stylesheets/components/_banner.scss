@@ -14,22 +14,23 @@
       font-family: $titre_1;
       color: white;
       text-shadow: 1px 1px 3px $fondaside;
-      font-size: 120px;
+      // font-size: 120px;
       font-weight: bold;
+      font-size: 10vw;
     }
 
     p {
-      font-size: 45px;
+      font-size: 4vw;
       color: $fondaside;
       opacity: .7;
       font-family: $titre;
       text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
     }
+    // @media screen and (max-width: 1050px) {
+    //  h1 {
+    //   font-size: 25px;
+    //   color: red;
+    //  }
+    // }
   }
 }
-
-// @media screen and (min-width: 1500px) {
-//   .banner {
-//     height: 50px;
-//   }
-// }
