@@ -42,19 +42,61 @@
     <div class="description">
       <div class="d-description weight">
         <%= image_tag("poids.png") %>
-        <p><strong>Weight:</strong><br><%= @pokemon.weight %> g</p>
+        <p><strong>Weight</strong><br><%= @pokemon.weight %> g</p>
       </div>
       <div class="d-description height">
         <%= image_tag("taille.png") %>
-        <p><strong>Height:</strong> <br> <%= @pokemon.height %> m</p>
+        <p><strong>Height</strong> <br> <%= @pokemon.height %> m</p>
       </div>
       <div class="d-description order">
         <%= image_tag("N.png") %>
-        <p><strong>Order:</strong> <br> <%= @pokemon.order %></p>
+        <p><strong>Order</strong> <br> <%= @pokemon.order %></p>
       </div>
       <div class="d-description types">
-        <%= image_tag("feu.png") %>
-        <p><strong>Types:</strong> <br> <%= @pokemon.types %></p>
+
+        <% if @pokemon.types == "grass" %>
+          <%= image_tag("Plante.png") %>
+        <% elsif @pokemon.types == "fire" %>
+          <%= image_tag("feu.png") %>
+        <% elsif @pokemon.types == "water" %>
+          <%= image_tag("Eau.png") %>
+        <% elsif @pokemon.types == "bug" %>
+          <%= image_tag("Insecte.png") %>
+        <% elsif @pokemon.types == "normal" %>
+          <%= image_tag("noraml.png") %>
+        <% elsif @pokemon.types == "poison" %>
+          <%= image_tag("Poison.png") %>
+        <% elsif @pokemon.types == "electric" %>
+          <%= image_tag("Electrique.png") %>
+        <% elsif @pokemon.types == "ground" %>
+          <%= image_tag("Sol.png") %>
+        <% elsif @pokemon.types == "fairy" %>
+          <%= image_tag("Fee.png") %>
+        <% elsif @pokemon.types == "fighting" %>
+          <%= image_tag("Combat.png") %>
+        <% elsif @pokemon.types == "psychic" %>
+          <%= image_tag("Psy.png") %>
+        <% elsif @pokemon.types == "ghost" %>
+          <%= image_tag("Spectre.png") %>
+        <% elsif @pokemon.types == "ice" %>
+          <%= image_tag("Glace.png") %>
+        <% else %>
+          <%= image_tag("normal.png") %>
+        <% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <p><strong>Types</strong> <br> <%= @pokemon.types %></p>
       </div>
     </div>
   </div>
