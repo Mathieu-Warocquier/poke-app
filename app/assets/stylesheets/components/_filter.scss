@@ -1,10 +1,16 @@
+.filter {
+  width: 100%;
+  overflow: hidden;
+}
+
 .ticker-title {
-  width: 230%;
+  width: 400%;
   padding-bottom: 5px;
   color: $bleu;
   margin-top: 10px;
   font-size: 20px;
   text-transform: uppercase;
+  overflow: hidden;
 }
 
 .ticker-title > * {
