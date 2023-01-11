@@ -39,16 +39,19 @@
   </div>
 
   <div class="description">
-    <div class="d-description-weight">
+    <div class="d-img">
+      <%= image_tag("feu.png") %>
+    </div>
+    <div class="d-description weight">
       <p><strong>Weight:</strong><br><%= @pokemon.weight %> g</p>
     </div>
-    <div class="d-description-height">
+    <div class="d-description height">
       <p><strong>Height:</strong> <br> <%= @pokemon.height %> m</p>
     </div>
-    <div class="d-description-order">
+    <div class="d-description order">
       <p><strong>Order:</strong> <br> <%= @pokemon.order %></p>
     </div>
-    <div class="d-description-types">
+    <div class="d-description types">
       <p><strong>Types:</strong> <br> <%= @pokemon.types %></p>
     </div>
   </div>
