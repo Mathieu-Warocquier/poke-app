@@ -2,11 +2,7 @@
   color: $bleu;
   font-size: 15px;
   margin: 10px 10px;
-  // position: fixed;
-  // top: 90px;
-  // left: 10px;
   transition: all 300ms linear;
-  // z-index: 2;
 
   &:hover {
     opacity: 0.7;
@@ -16,6 +12,20 @@
 
 .poke-show {
   display: flex;
+  justify-content: space-around;
+  padding: 0 15px;
+  background: rgb(241,241,241);
+background: linear-gradient(320deg, rgba(241,241,241,1) 43%, rgba(209,209,209,1) 70%);
+
+  .img-name {
+    .name{
+      font-size: 75px;
+      font-weight: bold;
+      font-family: $titre;
+      color: $bleu;
+      text-shadow: 1px 1px 3px $jaune;
+    }
+  }
 }
 
 // .poke-show {
@@ -35,15 +45,7 @@
 //   width: 100%;
 //   background: $blanc;
 
-//   .name{
-//     font-size: 75px;
-//     font-weight: bold;
-//     font-family: $titre;
-//     grid-area: 1 / 1 / 2 / 6;
-//     color: $bleu;
-//     padding: 15px 15px;
-//     z-index: 1;
-//   }
+
 // }
 
 // .barre {
@@ -165,92 +167,88 @@
 //   }
 // }
 
+.description {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  width: 100%;
+}
 
 
+.container-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  border-radius: 50% 20% / 10% 40%;
 
-// .container-img {
-//   height: 100%;
-//   width: 100%;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   background: rgb(241,241,241);
-//   background: linear-gradient(320deg, rgba(241,241,241,1) 0%, rgba(255,96,96,1) 70%);
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   grid-area: 1 / 5 / 6 / 7;
-// }
+  img {
+    height: 385px;
+    width: auto;
+  }
+}
 
-// .vert {
-//   background: rgb(241,241,241);
-//   background: linear-gradient(320deg, rgba(241,241,241,1) 0%, $vert 70%);
-// }
+.vert {
+  background: rgb(241,241,241);
+  background: linear-gradient(320deg, rgba(241,241,241,1) 0%, $vert 70%);
+}
 
-// .rouge {
-//   background: rgb(241,241,241);
-//   background: linear-gradient(320deg, rgba(241,241,241,1) 0%, $rouge 70%);
-// }
+.rouge {
+  background: rgb(241,241,241);
+  background: linear-gradient(320deg, rgba(241,241,241,1) 0%, $rouge 70%);
+}
 
-// .bleu {
-//   background: rgb(241,241,241);
-//   background: linear-gradient(320deg, rgba(241,241,241,1) 0%, $bleu-eau 70%);
-// }
+.bleu {
+  background: rgb(241,241,241);
+  background: linear-gradient(320deg, rgba(241,241,241,1) 0%, $bleu-eau 70%);
+}
 
-// .insecte {
-//   background: rgb(241,241,241);
-//   background: linear-gradient(320deg, rgba(241,241,241,1) 0%, $insecte 70%);
-// }
+.insecte {
+  background: rgb(241,241,241);
+  background: linear-gradient(320deg, rgba(241,241,241,1) 0%, $insecte 70%);
+}
 
-// .normal {
-//   background: rgb(241,241,241);
-//   background: linear-gradient(320deg, rgba(241,241,241,1) 0%, $normal 70%);
-// }
+.normal {
+  background: rgb(241,241,241);
+  background: linear-gradient(320deg, rgba(241,241,241,1) 0%, $normal 70%);
+}
 
-// .poison {
-//   background: rgb(241,241,241);
-//   background: linear-gradient(320deg, rgba(241,241,241,1) 0%, $poison 70%);
-// }
+.poison {
+  background: rgb(241,241,241);
+  background: linear-gradient(320deg, rgba(241,241,241,1) 0%, $poison 70%);
+}
 
-// .electric {
-//   background: rgb(241,241,241);
-//   background: linear-gradient(320deg, rgba(241,241,241,1) 0%, $electric 70%);
-// }
+.electric {
+  background: rgb(241,241,241);
+  background: linear-gradient(320deg, rgba(241,241,241,1) 0%, $electric 70%);
+}
 
-// .ground {
-//   background: rgb(241,241,241);
-//   background: linear-gradient(320deg, rgba(241,241,241,1) 0%, $ground 70%);
-// }
+.ground {
+  background: rgb(241,241,241);
+  background: linear-gradient(320deg, rgba(241,241,241,1) 0%, $ground 70%);
+}
 
-// .fée {
-//   background: rgb(241,241,241);
-//   background: linear-gradient(320deg, rgba(241,241,241,1) 0%, $fée 70%);
-// }
+.fée {
+  background: rgb(241,241,241);
+  background: linear-gradient(320deg, rgba(241,241,241,1) 0%, $fée 70%);
+}
 
-// .combat {
-//   background: rgb(241,241,241);
-//   background: linear-gradient(320deg, rgba(241,241,241,1) 0%, $combat 70%);
-// }
+.combat {
+  background: rgb(241,241,241);
+  background: linear-gradient(320deg, rgba(241,241,241,1) 0%, $combat 70%);
+}
 
-// .psy {
-//   background: rgb(241,241,241);
-//   background: linear-gradient(320deg, rgba(241,241,241,1) 0%, $psy 70%);
-// }
+.psy {
+  background: rgb(241,241,241);
+  background: linear-gradient(320deg, rgba(241,241,241,1) 0%, $psy 70%);
+}
 
-// .spectre {
-//   background: rgb(241,241,241);
-//   background: linear-gradient(320deg, rgba(241,241,241,1) 0%, $spectre 70%);
-// }
+.spectre {
+  background: rgb(241,241,241);
+  background: linear-gradient(320deg, rgba(241,241,241,1) 0%, $spectre 70%);
+}
 
-// .ice {
-//   background: rgb(241,241,241);
-//   background: linear-gradient(320deg, rgba(241,241,241,1) 0%, $ice 70%);
-// }
-
-
-// .img-show-pokemon {
-//   img{
-//     width: 90%;
-//     height: auto;
-//   }
-// }
+.ice {
+  background: rgb(241,241,241);
+  background: linear-gradient(320deg, rgba(241,241,241,1) 0%, $ice 70%);
+}
