@@ -10,7 +10,7 @@ class PokemonsController < ApplicationController
 
     respond_to do |format|
       format.html # Follow regular flow of Rails
-      format.text { render partial: 'pokemons/list', formats: :html , locals: { pokemons: @pokemons } }
+      format.text { render partial: 'pokemons/list', formats: :html, locals: { pokemons: @pokemons } }
     end
 
   end
