@@ -29,15 +29,17 @@
 
   .form-control {
     width: 50%;
+    font-weight: bold;
+    color: $bleu;
   }
 
   .form-control:focus {
     color: $bleu;
-    background-color: $blanc;
+    background-color: #0d6dfd10;
     border-color: $jaune;
     font-family: $text;
+    font-weight: bold;
     outline: 0;
-    box-shadow: 0px 0px 0px 3px #000000;
     box-shadow: 0 0 0 1px #ffe01968;
   }
 
