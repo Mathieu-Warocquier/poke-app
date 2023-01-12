@@ -12,6 +12,7 @@
   text-transform: uppercase;
   font-family: $text;
   font-weight: bold;
+  // transform: translateX(0px);
 }
 
 .ticker-title > * {
@@ -22,7 +23,7 @@
 
 @keyframes title {
   0% {transform: translateX(0);}
-  100% {transform: translateX(-233px);}
+  100% {transform: translateX(-214px);}
 }
 
 .filtre {
