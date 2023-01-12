@@ -7,11 +7,11 @@ import { application } from "./application"
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
 
-// import RefreshListController from "./refresh_list_controller"
-// application.register("refresh-list", RefreshListController)
+import RefreshListController from "./refresh_list_controller"
+application.register("refresh-list", RefreshListController)
 
-import FormController from "./form_controller"
-application.register("form", FormController)
+// import FormController from "./form_controller"
+// application.register("form", FormController)
 
 // import TomSelectController from "./tom_select_controller"
 // application.register("tom-select", TomSelectController)
