@@ -4,14 +4,17 @@
 
 import { application } from "./application"
 
+import FormController from "./form_controller"
+application.register("form", FormController)
+
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
+
+import PokemonsController from "./pokemons_controller"
+application.register("pokemons", PokemonsController)
 
 import RefreshListController from "./refresh_list_controller"
 application.register("refresh-list", RefreshListController)
 
-// import FormController from "./form_controller"
-// application.register("form", FormController)
-
-// import TomSelectController from "./tom_select_controller"
-// application.register("tom-select", TomSelectController)
+import TomSelectController from "./tom_select_controller"
+application.register("tom-select", TomSelectController)

@@ -1,25 +1,19 @@
-import { Controller } from "@hotwired/stimulus"
+// import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="form"
-export default class extends Controller {
-  connect() {
-    console.log("cc")
-  }
+// export default class extends Controller {
+//   static targets = ["formDiv", "formInput", "results"]
 
-  submit(event) {
-    event.preventDefault()
-    console.log("CC2")
+//   connect() {
+//     console.log(formDivTarget)
+//   }
 
-    // Get the form data
-    const formData = new FormData(event.target)
+//   search(event) {
+//     event.preventDefault();
+//     this.resultsTarget.innerHTML = ""
+//     console.log(formImputTarget.value);
 
-    fetch("/your/form/handler", {
-      method: "POST",
-      body: formData
-    }).then(response => response.text())
-    .then((data) => {
-      console.log(data)
-      this.listTarget.outerHTML = data;
-    })
-  }
-}
+//     // this.fetchPokemons(this.formImputTarget.value)
+//   }
+
+// }
