@@ -10,8 +10,8 @@ application.register("form", FormController)
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
 
-import PokemonsController from "./pokemons_controller"
-application.register("pokemons", PokemonsController)
+// import PokemonsController from "./pokemons_controller"
+// application.register("pokemons", PokemonsController)
 
 import RefreshListController from "./refresh_list_controller"
 application.register("refresh-list", RefreshListController)
