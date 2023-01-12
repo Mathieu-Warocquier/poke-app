@@ -1,15 +1,16 @@
-
-<div data-controller="form">
-  <%= form_with url: pokemons_path, method: :get, html: { class: 'd-flex searchbar', data: { refresh_list_target: 'form' } } do |f|%>
+<h1 class="titre-search">Search by name</h1>
+<div data-controller="pokemons">
+  <%= form_with url: pokemons_path, method: :get, html: { class: 'd-flex searchbar', data: { refresh_list_target: 'form', pokemons_target: 'form' , action: 'submit->pokemons#search' } } do |f|%>
   <%= f.text_field :query,
 
       class: "form-control",
       placeholder: "Find a pokemon",
       value: params[:query],
                      data: {
+                      pokemons_target: 'formInput',
                       refresh_list_target: 'searchInput',
                       action: "keyup->refresh-list#update"
                     } %>
-  <%= submit_tag "Search", class: "btn btn-search" %>
+  <%# <%= submit_tag "Search", class: "btn btn-search" %>
   <% end %>
 </div>

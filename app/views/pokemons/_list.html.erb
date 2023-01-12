@@ -1,5 +1,5 @@
 
- <div data-refresh-list-target="list" class="list-d" >
+ <div data-refresh-list-target="list" data-pokemons-target="results" class="list-d" >
     <% @pokemons.each do |pokemon| %>
       <div class="list-item">
         <%= link_to pokemon_path(pokemon), class:"list-name" do %>
