@@ -14,6 +14,25 @@
       <% end %>
     </div>
 
+      <%# TYPES = ["grass", "fire", "water", "bug", "normal", "poison", "electric", "ground", "fairy", "fighting", "psychic", "ghost", "ice"] %>
+
+
+    <div class="grass" style="display: none">
+      <% @pokemons.each do |pokemon| %>
+        <% if pokemon.types === 'grass' %>
+          <div class="list-item">
+          <%= link_to pokemon_path(pokemon), class:"list-name" do %>
+            <%= image_tag("#{pokemon.sprites}") %>
+            <div class="list-description">
+              <p class="list-name"><%=pokemon.name%></p>
+              <p class="list-order">No.<%=pokemon.order%></p>
+            </div>
+          <% end %>
+        </div>
+        <% end %>
+      <% end %>
+    </div>
+
     <div class="ice" style="display: none">
       <% @pokemons.each do |pokemon| %>
         <% if pokemon.types === 'ice' %>
@@ -29,7 +48,6 @@
         <% end %>
       <% end %>
     </div>
-
   </div>
 
 
