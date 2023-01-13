@@ -1,6 +1,6 @@
 
  <div data-refresh-list-target="list" data-fitre-target="results" class="list-d" >
-    <div class="all hidden" data-fitre-target="all">
+    <div class="all" data-fitre-target="all">
       <% @pokemons.each do |pokemon| %>
         <div class="list-item">
           <%= link_to pokemon_path(pokemon), class:"list-name" do %>
@@ -14,7 +14,7 @@
       <% end %>
     </div>
 
-    <div class="grass hidden"  data-fitre-target = "plante">
+    <div class="grass d-none"  data-fitre-target = "plante">
       <% @pokemons.each do |pokemon| %>
         <% if pokemon.types === Pokemon::TYPES[0] %>
           <div class="list-item">
@@ -30,7 +30,7 @@
       <% end %>
     </div>
 
-    <div class="fire hidden"  data-fitre-target = "feu">
+    <div class="fire d-none"  data-fitre-target = "feu">
       <% @pokemons.each do |pokemon| %>
         <% if pokemon.types === Pokemon::TYPES[1] %>
           <div class="list-item">
@@ -46,7 +46,7 @@
       <% end %>
     </div>
 
-    <div class="water hidden"  data-fitre-target = "eau">
+    <div class="water d-none"  data-fitre-target = "eau">
       <% @pokemons.each do |pokemon| %>
         <% if pokemon.types === Pokemon::TYPES[2] %>
           <div class="list-item">
@@ -62,7 +62,7 @@
       <% end %>
     </div>
 
-    <div class="bug hidden"  data-fitre-target = "insecte">
+    <div class="bug d-none"  data-fitre-target = "insecte">
       <% @pokemons.each do |pokemon| %>
         <% if pokemon.types === Pokemon::TYPES[3] %>
           <div class="list-item">
@@ -78,7 +78,7 @@
       <% end %>
     </div>
 
-    <div class="normal hidden"  data-fitre-target = "normal">
+    <div class="normal d-none"  data-fitre-target = "normal">
       <% @pokemons.each do |pokemon| %>
         <% if pokemon.types === Pokemon::TYPES[4] %>
           <div class="list-item">
@@ -94,7 +94,7 @@
       <% end %>
     </div>
 
-    <div class="poison hidden"  data-fitre-target = "poison">
+    <div class="poison d-none"  data-fitre-target = "poison">
       <% @pokemons.each do |pokemon| %>
         <% if pokemon.types === Pokemon::TYPES[5] %>
           <div class="list-item">
@@ -110,7 +110,7 @@
       <% end %>
     </div>
 
-    <div class="electric hidden"  data-fitre-target = "electrique">
+    <div class="electric d-none"  data-fitre-target = "electrique">
       <% @pokemons.each do |pokemon| %>
         <% if pokemon.types === Pokemon::TYPES[6] %>
           <div class="list-item">
@@ -126,7 +126,7 @@
       <% end %>
     </div>
 
-    <div class="ground hidden"  data-fitre-target = "sol">
+    <div class="ground d-none"  data-fitre-target = "sol">
       <% @pokemons.each do |pokemon| %>
         <% if pokemon.types === Pokemon::TYPES[7] %>
           <div class="list-item">
@@ -142,7 +142,7 @@
       <% end %>
     </div>
 
-    <div class="fairy hidden"  data-fitre-target = "fee">
+    <div class="fairy d-none"  data-fitre-target = "fee">
       <% @pokemons.each do |pokemon| %>
         <% if pokemon.types === Pokemon::TYPES[8] %>
           <div class="list-item">
@@ -158,7 +158,7 @@
       <% end %>
     </div>
 
-    <div class="fighting hidden"  data-fitre-target = "combat">
+    <div class="fighting d-none"  data-fitre-target = "combat">
       <% @pokemons.each do |pokemon| %>
         <% if pokemon.types === Pokemon::TYPES[9] %>
           <div class="list-item">
@@ -174,7 +174,7 @@
       <% end %>
     </div>
 
-    <div class="psychic hidden"  data-fitre-target = "psy">
+    <div class="psychic d-none"  data-fitre-target = "psy">
       <% @pokemons.each do |pokemon| %>
         <% if pokemon.types === Pokemon::TYPES[10] %>
           <div class="list-item">
@@ -190,7 +190,7 @@
       <% end %>
     </div>
 
-    <div class="ghost hidden"  data-fitre-target = "spectre">
+    <div class="ghost d-none"  data-fitre-target = "spectre">
       <% @pokemons.each do |pokemon| %>
         <% if pokemon.types === Pokemon::TYPES[11] %>
           <div class="list-item">
@@ -206,7 +206,7 @@
       <% end %>
     </div>
 
-    <div class="ice hidden"  data-fitre-target = "glace">
+    <div class="ice d-none"  data-fitre-target = "glace">
       <% @pokemons.each do |pokemon| %>
         <% if pokemon.types === Pokemon::TYPES[12] %>
           <div class="list-item">

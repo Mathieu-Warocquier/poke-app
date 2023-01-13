@@ -5,7 +5,7 @@ export default class extends Controller {
   static targets = ["listFiltre", "results", "all", "plante", "feu", "eau", "insecte", "normal", "poison", "electrique", "sol", "fee", "combat", "psy", "spectre", "glace"]
 
   connect() {
-    console.log("filtre")
+
   }
 
   all() {
@@ -24,6 +24,8 @@ export default class extends Controller {
     this.glaceTarget.classList.add("d-none")
     this.allTarget.classList.remove("d-none")
     this.allTarget.classList.remove("is-active")
+    console.log(this.allTarget)
+    console.log(this.feeTarget)
   }
 
   plante() {
