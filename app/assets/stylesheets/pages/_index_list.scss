@@ -14,7 +14,7 @@
   // max-width: 1300px;
   // margin: 70px auto 0;
 
-.all, .ice, .grass {
+.all, .ice, .grass, .fire, .water, .bug, .normal, .poison, .electric, .ground, .fairy, .fighting, .psychic, .ghost {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -83,4 +83,4 @@
        font-size: 15px;
      }
    }
-  }
+}

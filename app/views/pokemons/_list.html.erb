@@ -1,6 +1,6 @@
 
  <div data-refresh-list-target="list" data-fitre-target="results" class="list-d" >
-    <div class="all">
+    <div class="all" data-fitre-target="all">
       <% @pokemons.each do |pokemon| %>
         <div class="list-item">
           <%= link_to pokemon_path(pokemon), class:"list-name" do %>
@@ -17,9 +17,185 @@
       <%# TYPES = ["grass", "fire", "water", "bug", "normal", "poison", "electric", "ground", "fairy", "fighting", "psychic", "ghost", "ice"] %>
 
 
-    <div class="grass" style="display: none">
+    <div class="grass hidden"  data-fitre-target = "plante">
       <% @pokemons.each do |pokemon| %>
-        <% if pokemon.types === 'grass' %>
+        <% if pokemon.types === Pokemon::TYPES[0] %>
+          <div class="list-item">
+          <%= link_to pokemon_path(pokemon), class:"list-name" do %>
+            <%= image_tag("#{pokemon.sprites}") %>
+            <div class="list-description">
+              <p class="list-name"><%=pokemon.name%></p>
+              <p class="list-order">No.<%=pokemon.order%></p>
+            </div>
+          <% end %>
+        </div>
+        <% end %>
+      <% end %>
+    </div>
+
+    <div class="fire hidden"  data-fitre-target = "feu">
+      <% @pokemons.each do |pokemon| %>
+        <% if pokemon.types === Pokemon::TYPES[1] %>
+          <div class="list-item">
+          <%= link_to pokemon_path(pokemon), class:"list-name" do %>
+            <%= image_tag("#{pokemon.sprites}") %>
+            <div class="list-description">
+              <p class="list-name"><%=pokemon.name%></p>
+              <p class="list-order">No.<%=pokemon.order%></p>
+            </div>
+          <% end %>
+        </div>
+        <% end %>
+      <% end %>
+    </div>
+
+    <div class="water hidden"  data-fitre-target = "eau">
+      <% @pokemons.each do |pokemon| %>
+        <% if pokemon.types === Pokemon::TYPES[2] %>
+          <div class="list-item">
+          <%= link_to pokemon_path(pokemon), class:"list-name" do %>
+            <%= image_tag("#{pokemon.sprites}") %>
+            <div class="list-description">
+              <p class="list-name"><%=pokemon.name%></p>
+              <p class="list-order">No.<%=pokemon.order%></p>
+            </div>
+          <% end %>
+        </div>
+        <% end %>
+      <% end %>
+    </div>
+
+    <div class="bug hidden"  data-fitre-target = "insecte">
+      <% @pokemons.each do |pokemon| %>
+        <% if pokemon.types === Pokemon::TYPES[3] %>
+          <div class="list-item">
+          <%= link_to pokemon_path(pokemon), class:"list-name" do %>
+            <%= image_tag("#{pokemon.sprites}") %>
+            <div class="list-description">
+              <p class="list-name"><%=pokemon.name%></p>
+              <p class="list-order">No.<%=pokemon.order%></p>
+            </div>
+          <% end %>
+        </div>
+        <% end %>
+      <% end %>
+    </div>
+
+    <div class="normal hidden"  data-fitre-target = "normal">
+      <% @pokemons.each do |pokemon| %>
+        <% if pokemon.types === Pokemon::TYPES[4] %>
+          <div class="list-item">
+          <%= link_to pokemon_path(pokemon), class:"list-name" do %>
+            <%= image_tag("#{pokemon.sprites}") %>
+            <div class="list-description">
+              <p class="list-name"><%=pokemon.name%></p>
+              <p class="list-order">No.<%=pokemon.order%></p>
+            </div>
+          <% end %>
+        </div>
+        <% end %>
+      <% end %>
+    </div>
+
+    <div class="poison hidden"  data-fitre-target = "poison">
+      <% @pokemons.each do |pokemon| %>
+        <% if pokemon.types === Pokemon::TYPES[5] %>
+          <div class="list-item">
+          <%= link_to pokemon_path(pokemon), class:"list-name" do %>
+            <%= image_tag("#{pokemon.sprites}") %>
+            <div class="list-description">
+              <p class="list-name"><%=pokemon.name%></p>
+              <p class="list-order">No.<%=pokemon.order%></p>
+            </div>
+          <% end %>
+        </div>
+        <% end %>
+      <% end %>
+    </div>
+
+    <div class="electric hidden"  data-fitre-target = "electrique">
+      <% @pokemons.each do |pokemon| %>
+        <% if pokemon.types === Pokemon::TYPES[6] %>
+          <div class="list-item">
+          <%= link_to pokemon_path(pokemon), class:"list-name" do %>
+            <%= image_tag("#{pokemon.sprites}") %>
+            <div class="list-description">
+              <p class="list-name"><%=pokemon.name%></p>
+              <p class="list-order">No.<%=pokemon.order%></p>
+            </div>
+          <% end %>
+        </div>
+        <% end %>
+      <% end %>
+    </div>
+
+    <div class="ground" style="display: none">
+      <% @pokemons.each do |pokemon| %>
+        <% if pokemon.types === Pokemon::TYPES[7] %>
+          <div class="list-item">
+          <%= link_to pokemon_path(pokemon), class:"list-name" do %>
+            <%= image_tag("#{pokemon.sprites}") %>
+            <div class="list-description">
+              <p class="list-name"><%=pokemon.name%></p>
+              <p class="list-order">No.<%=pokemon.order%></p>
+            </div>
+          <% end %>
+        </div>
+        <% end %>
+      <% end %>
+    </div>
+
+    <div class="fairy" style="display: none">
+      <% @pokemons.each do |pokemon| %>
+        <% if pokemon.types === Pokemon::TYPES[8] %>
+          <div class="list-item">
+          <%= link_to pokemon_path(pokemon), class:"list-name" do %>
+            <%= image_tag("#{pokemon.sprites}") %>
+            <div class="list-description">
+              <p class="list-name"><%=pokemon.name%></p>
+              <p class="list-order">No.<%=pokemon.order%></p>
+            </div>
+          <% end %>
+        </div>
+        <% end %>
+      <% end %>
+    </div>
+
+    <div class="fighting" style="display: none">
+      <% @pokemons.each do |pokemon| %>
+        <% if pokemon.types === Pokemon::TYPES[9] %>
+          <div class="list-item">
+          <%= link_to pokemon_path(pokemon), class:"list-name" do %>
+            <%= image_tag("#{pokemon.sprites}") %>
+            <div class="list-description">
+              <p class="list-name"><%=pokemon.name%></p>
+              <p class="list-order">No.<%=pokemon.order%></p>
+            </div>
+          <% end %>
+        </div>
+        <% end %>
+      <% end %>
+    </div>
+
+    <div class="psychic" style="display: none">
+      <% @pokemons.each do |pokemon| %>
+        <% if pokemon.types === Pokemon::TYPES[10] %>
+          <div class="list-item">
+          <%= link_to pokemon_path(pokemon), class:"list-name" do %>
+            <%= image_tag("#{pokemon.sprites}") %>
+            <div class="list-description">
+              <p class="list-name"><%=pokemon.name%></p>
+              <p class="list-order">No.<%=pokemon.order%></p>
+            </div>
+          <% end %>
+        </div>
+        <% end %>
+      <% end %>
+    </div>
+
+    <div class="ghost" style="display: none">
+      <% @pokemons.each do |pokemon| %>
+        <% if pokemon.types === Pokemon::TYPES[11] %>
           <div class="list-item">
           <%= link_to pokemon_path(pokemon), class:"list-name" do %>
             <%= image_tag("#{pokemon.sprites}") %>
@@ -35,7 +211,7 @@
 
     <div class="ice" style="display: none">
       <% @pokemons.each do |pokemon| %>
-        <% if pokemon.types === 'ice' %>
+        <% if pokemon.types === Pokemon::TYPES[12] %>
           <div class="list-item">
           <%= link_to pokemon_path(pokemon), class:"list-name" do %>
             <%= image_tag("#{pokemon.sprites}") %>
