@@ -8,6 +8,375 @@
 
 .filtre-item {
   cursor: pointer;
+
+  img {
+    height: 35px;
+    width: auto;
+  }
+}
+
+.plante {
+  position: relative;
+  transition: all 200ms linear;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &::before {
+    content: "grass";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 13px;
+    font-family: $text;
+    font-weight: bold;
+    color: $bleu;
+    opacity: 0;
+    transition: all 200ms linear;
+  }
+
+  &:hover::before {
+    opacity: 1;
+    font-size: 15px;
+  }
+}
+
+.fire {
+  position: relative;
+  transition: all 200ms linear;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &::before {
+    content: "fire";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 13px;
+    font-family: $text;
+    font-weight: bold;
+    color: $bleu;
+    opacity: 0;
+    transition: all 200ms linear;
+  }
+
+  &:hover::before {
+    opacity: 1;
+    font-size: 15px;
+  }
+}
+
+.water {
+  position: relative;
+  transition: all 200ms linear;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &::before {
+    content: "water";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 13px;
+    font-family: $text;
+    font-weight: bold;
+    color: $bleu;
+    opacity: 0;
+    transition: all 200ms linear;
+  }
+
+  &:hover::before {
+    opacity: 1;
+    font-size: 15px;
+  }
+}
+
+.bug {
+  position: relative;
+  transition: all 200ms linear;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &::before {
+    content: "bug";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 13px;
+    font-family: $text;
+    font-weight: bold;
+    color: $bleu;
+    opacity: 0;
+    transition: all 200ms linear;
+  }
+
+  &:hover::before {
+    opacity: 1;
+    font-size: 15px;
+  }
+}
+
+.normal1 {
+  position: relative;
+  transition: all 200ms linear;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &::before {
+    content: "normal";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 13px;
+    font-family: $text;
+    font-weight: bold;
+    color: $bleu;
+    opacity: 0;
+    transition: all 200ms linear;
+  }
+
+  &:hover::before {
+    opacity: 1;
+    font-size: 15px;
+  }
+}
+
+.poison1 {
+  position: relative;
+  transition: all 200ms linear;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &::before {
+    content: "poison";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 13px;
+    font-family: $text;
+    font-weight: bold;
+    color: $bleu;
+    opacity: 0;
+    transition: all 200ms linear;
+  }
+
+  &:hover::before {
+    opacity: 1;
+    font-size: 15px;
+  }
+}
+
+.electric1 {
+  position: relative;
+  transition: all 200ms linear;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &::before {
+    content: "electric";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 13px;
+    font-family: $text;
+    font-weight: bold;
+    color: $bleu;
+    opacity: 0;
+    transition: all 200ms linear;
+  }
+
+  &:hover::before {
+    opacity: 1;
+    font-size: 15px;
+  }
+}
+
+.ground1 {
+  position: relative;
+  transition: all 200ms linear;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &::before {
+    content: "ground";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 13px;
+    font-family: $text;
+    font-weight: bold;
+    color: $bleu;
+    opacity: 0;
+    transition: all 200ms linear;
+  }
+
+  &:hover::before {
+    opacity: 1;
+    font-size: 15px;
+  }
+}
+
+.fairy {
+  position: relative;
+  transition: all 200ms linear;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &::before {
+    content: "fairy";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 13px;
+    font-family: $text;
+    font-weight: bold;
+    color: $bleu;
+    opacity: 0;
+    transition: all 200ms linear;
+  }
+
+  &:hover::before {
+    opacity: 1;
+    font-size: 15px;
+  }
+}
+
+.fighting {
+  position: relative;
+  transition: all 200ms linear;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &::before {
+    content: "fighting";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 13px;
+    font-family: $text;
+    font-weight: bold;
+    color: $bleu;
+    opacity: 0;
+    transition: all 200ms linear;
+  }
+
+  &:hover::before {
+    opacity: 1;
+    font-size: 15px;
+  }
+}
+
+.psychic {
+  position: relative;
+  transition: all 200ms linear;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &::before {
+    content: "psychic";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 13px;
+    font-family: $text;
+    font-weight: bold;
+    color: $bleu;
+    opacity: 0;
+    transition: all 200ms linear;
+  }
+
+  &:hover::before {
+    opacity: 1;
+    font-size: 15px;
+  }
+}
+
+.ghost {
+  position: relative;
+  transition: all 200ms linear;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &::before {
+    content: "ghost";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 13px;
+    font-family: $text;
+    font-weight: bold;
+    color: $bleu;
+    opacity: 0;
+    transition: all 200ms linear;
+  }
+
+  &:hover::before {
+    opacity: 1;
+    font-size: 15px;
+  }
+}
+
+.ice1 {
+  position: relative;
+  transition: all 200ms linear;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &::before {
+    content: "ice";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 13px;
+    font-family: $text;
+    font-weight: bold;
+    color: $bleu;
+    opacity: 0;
+    transition: all 200ms linear;
+  }
+
+  &:hover::before {
+    opacity: 1;
+    font-size: 15px;
+  }
 }
 
 .btn-filtre {
@@ -66,12 +435,4 @@
   align-items: center;
   margin-bottom: 5px;
 
-  img {
-    height: 35px;
-    width: auto;
-
-    &:hover {
-      height: 40px;
-    }
-  }
 }
