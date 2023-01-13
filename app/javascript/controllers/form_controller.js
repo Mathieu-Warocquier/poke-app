@@ -10,7 +10,7 @@ export default class extends Controller {
 
   search(event) {
     event.preventDefault();
-
+    console.log(this.formInputTarget)
   }
 
 }

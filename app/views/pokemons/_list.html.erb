@@ -1,14 +1,40 @@
 
- <div data-refresh-list-target="list" data-pokemons-target="results" class="list-d" >
-    <% @pokemons.each do |pokemon| %>
-      <div class="list-item">
-        <%= link_to pokemon_path(pokemon), class:"list-name" do %>
-          <%= image_tag("#{pokemon.sprites}") %>
-          <div class="list-description">
-            <p class="list-name"><%=pokemon.name%></p>
-            <p class="list-order">No.<%=pokemon.order%></p>
-          </div>
+ <div data-refresh-list-target="list" data-fitre-target="results" class="list-d" >
+    <div class="all">
+      <% @pokemons.each do |pokemon| %>
+        <div class="list-item">
+          <%= link_to pokemon_path(pokemon), class:"list-name" do %>
+            <%= image_tag("#{pokemon.sprites}") %>
+            <div class="list-description">
+              <p class="list-name"><%=pokemon.name%></p>
+              <p class="list-order">No.<%=pokemon.order%></p>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="ice" style="display: none">
+      <% @pokemons.each do |pokemon| %>
+        <% if pokemon.types === 'ice' %>
+          <div class="list-item">
+          <%= link_to pokemon_path(pokemon), class:"list-name" do %>
+            <%= image_tag("#{pokemon.sprites}") %>
+            <div class="list-description">
+              <p class="list-name"><%=pokemon.name%></p>
+              <p class="list-order">No.<%=pokemon.order%></p>
+            </div>
+          <% end %>
+        </div>
         <% end %>
-      </div>
-    <% end %>
+      <% end %>
+    </div>
+
   </div>
+
+
+  <%# <% @pokemons.each do |pokemon| %>
+    <%# <% if pokemon.types === 'grass' %>
+      <%# <%= pokemon.name %>
+       <%# <% end %>
+  <%# <% end %>

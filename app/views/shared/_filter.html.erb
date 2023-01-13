@@ -12,11 +12,13 @@
     <span>filters by type</span>
   </div>
 
+      <div class="filtre" data-fitre-target = "listFiltre">
 
+      <%= link_to pokemons_path do %><%= image_tag("Plante.png")%><% end%>
 
-
-      <div class="filtre" data-controller="filter">
-        <%= image_tag("Plante.png") %>
+        <%# <div data-action = "click->fitre#filter" >
+        <%= image_tag("Plante.png")%>
+        <%# </div> %>
         <%= image_tag("feu.png") %>
         <%= image_tag("Eau.png") %>
         <%= image_tag("Insecte.png") %>

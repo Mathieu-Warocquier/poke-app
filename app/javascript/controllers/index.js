@@ -4,6 +4,9 @@
 
 import { application } from "./application"
 
+import FitreController from "./fitre_controller"
+application.register("fitre", FitreController)
+
 import FormController from "./form_controller"
 application.register("form", FormController)
 
