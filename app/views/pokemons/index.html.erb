@@ -1,6 +1,8 @@
 <div class="index" data-controller="refresh-list">
-  <%= render 'shared/banner' %>
-  <%= render 'shared/filter' %>
-  <%= render 'pokemons/search' %>
-  <%= render 'pokemons/list' %>
+  <div data-controller="fitre">
+    <%= render 'shared/banner' %>
+    <%= render 'shared/filter' %>
+    <%= render 'pokemons/search' %>
+    <%= render 'pokemons/list' %>
+  </div>
 </div>

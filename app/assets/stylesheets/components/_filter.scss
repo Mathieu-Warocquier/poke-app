@@ -3,6 +3,35 @@
   overflow: hidden;
 }
 
+.filtre-item {
+  cursor: pointer;
+}
+
+.btn-filtre {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  .btn-f {
+    background-color: $bleu;
+    color: $jaune;
+    font-family: $text;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 300ms linear;
+
+    &:hover {
+      opacity: 0.7;
+      color: $jaune;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
 .ticker-title {
   width: 400%;
   padding-bottom: 5px;
@@ -22,7 +51,7 @@
 
 @keyframes title {
   0% {transform: translateX(0);}
-  100% {transform: translateX(-233px);}
+  100% {transform: translateX(-214px);}
 }
 
 .filtre {
@@ -32,7 +61,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 5px;
 
   img {
     height: 35px;

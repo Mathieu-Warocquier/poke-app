@@ -12,24 +12,62 @@
     <span>filters by type</span>
   </div>
 
+      <div class="filtre" data-fitre-target = "listFiltre">
 
+        <div class= "filtre-item" data-action = "click->fitre#plante">
+          <%= image_tag("Plante.png")%>
+        </div>
 
+        <div class= "filtre-item" data-action = "click->fitre#feu">
+          <%= image_tag("feu.png") %>
+        </div>
 
-      <div class="filtre" data-controller="filter">
-        <%= image_tag("Plante.png") %>
-        <%= image_tag("feu.png") %>
-        <%= image_tag("Eau.png") %>
-        <%= image_tag("Insecte.png") %>
-        <%= image_tag("normal.png") %>
-        <%= image_tag("Poison.png") %>
-        <%= image_tag("Electrique.png") %>
-        <%= image_tag("Sol.png") %>
-        <%= image_tag("Fee.png") %>
-        <%= image_tag("Combat.png") %>
-        <%= image_tag("Psy.png") %>
-        <%= image_tag("Spectre.png") %>
-        <%= image_tag("Glace.png") %>
+        <div class= "filtre-item" data-action = "click->fitre#eau">
+          <%= image_tag("Eau.png") %>
+        </div>
+
+        <div class= "filtre-item" data-action = "click->fitre#insecte">
+          <%= image_tag("Insecte.png") %>
+        </div>
+
+        <div class= "filtre-item" data-action = "click->fitre#normal">
+          <%= image_tag("normal.png") %>
+        </div>
+
+        <div class= "filtre-item" data-action = "click->fitre#poison">
+          <%= image_tag("Poison.png") %>
+        </div>
+
+        <div class= "filtre-item" data-action = "click->fitre#electrique">
+          <%= image_tag("Electrique.png") %>
+        </div>
+
+        <div class= "filtre-item" data-action = "click->fitre#sol">
+          <%= image_tag("Sol.png") %>
+        </div>
+
+        <div class= "filtre-item" data-action = "click->fitre#fee">
+          <%= image_tag("Fee.png") %>
+        </div>
+
+        <div class= "filtre-item" data-action = "click->fitre#combat">
+          <%= image_tag("Combat.png") %>
+        </div>
+
+        <div class= "filtre-item" data-action = "click->fitre#psy">
+          <%= image_tag("Psy.png") %>
+        </div>
+
+        <div class= "filtre-item" data-action = "click->fitre#spectre">
+          <%= image_tag("Spectre.png") %>
+        </div>
+
+        <div class= "filtre-item" data-action = "click->fitre#glace">
+          <%= image_tag("Glace.png") %>
+        </div>
       </div>
 
-
+      <div class= "btn-filtre" data-action = "click->fitre#all">
+        <button class= " btn btn-f">All pokemons</button>
+      </div>
 </div>

@@ -6,6 +6,15 @@
 
 
 .list-d {
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  // background: #F1F1F1;
+  // width: 80%;
+  // max-width: 1300px;
+  // margin: 70px auto 0;
+
+.all, .ice, .grass, .fire, .water, .bug, .normal, .poison, .electric, .ground, .fairy, .fighting, .psychic, .ghost {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -13,6 +22,7 @@
   width: 80%;
   max-width: 1300px;
   margin: 70px auto 0;
+}
 
 
   .list-item {
@@ -73,4 +83,4 @@
        font-size: 15px;
      }
    }
-  }
+}
