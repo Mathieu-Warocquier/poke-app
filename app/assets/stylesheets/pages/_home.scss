@@ -102,17 +102,16 @@ body {
     align-items: center;
     transition: all;
 
-    &:hover {
-      color: $jaune;
-      .arrow {
-      width: 100px;
-      background: $jaune;
-      &::before, &::after {
+      &:hover {
+        color: $jaune;
+        .arrow {
+        width: 100px;
         background: $jaune;
+        &::before, &::after {
+          background: $jaune;
+        }
       }
     }
-    }
-
   }
 
   .arrow {
